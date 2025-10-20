@@ -3,8 +3,19 @@
 
 class Usuario
 {
+private:
+    string idUser;
+    string passId;
+    string nombre;
+    string ciudad;
+    string pais;
+    int anio, mes,dia;
+    string tipoCuenta;
 public:
-    Usuario();
+    Usuario(string,string,string,string,string, int,int, int, string);
+    void mostrarUsuario();
+    void reproducir();
+    void seguir();
 };
 
 #endif // USUARIO_H

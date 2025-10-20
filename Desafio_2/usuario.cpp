@@ -1,3 +1,8 @@
 #include "usuario.h"
 
-Usuario::Usuario() {}
+Usuario::Usuario() {
+
+
+
+
+}

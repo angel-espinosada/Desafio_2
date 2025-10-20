@@ -4,12 +4,14 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
+        album.cpp \
         estandar.cpp \
         main.cpp \
         premium.cpp \
         usuario.cpp
 
 HEADERS += \
+    album.h \
     estandar.h \
     premium.h \
     usuario.h
