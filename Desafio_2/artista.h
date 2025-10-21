@@ -13,6 +13,7 @@ private:
     string edad;
     int seguidores;
 public:
+    //Artista();
     Artista(string,string,string,string, int);
     void mostrarArtista();
 
