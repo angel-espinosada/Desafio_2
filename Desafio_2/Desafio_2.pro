@@ -5,6 +5,7 @@ CONFIG -= qt
 
 SOURCES += \
         album.cpp \
+        artista.cpp \
         estandar.cpp \
         main.cpp \
         premium.cpp \
@@ -12,6 +13,7 @@ SOURCES += \
 
 HEADERS += \
     album.h \
+    artista.h \
     estandar.h \
     premium.h \
     usuario.h
