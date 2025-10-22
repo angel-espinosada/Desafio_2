@@ -14,7 +14,7 @@ private:
     string nombreAlbum;
     int cantidadCanciones;
 public:
-    Album(string,string,string,string, int,string,  string,int);
+    Album(string,string,string,int, int,string,  string,int);
 };
 
 #endif // ALBUM_H

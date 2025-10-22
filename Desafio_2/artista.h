@@ -10,11 +10,11 @@ private:
     string codigoArtista;
     string nombre;
     string pais;
-    string edad;
+    int edad;
     int seguidores;
 public:
     //Artista();
-    Artista(string,string,string,string, int);
+    Artista(string,string,string,int, int);
     void mostrarArtista();
 
 };

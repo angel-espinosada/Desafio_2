@@ -1,6 +1,7 @@
 #include "artista.h"
+#include <iostream>
 
-Artista::Artista(string _codigoArtista,string _nombre,string _pais,string _edad, int _seguidores) {
+Artista::Artista(string _codigoArtista,string _nombre,string _pais,int _edad, int _seguidores) {
 
     codigoArtista=_codigoArtista;
     nombre=_nombre;
@@ -12,4 +13,8 @@ Artista::Artista(string _codigoArtista,string _nombre,string _pais,string _edad,
 
 
 
+void Artista::mostrarArtista(){
 
+
+    cout<<"Datos del artista "<<nombre<<" de "<<pais<<endl;
+}
