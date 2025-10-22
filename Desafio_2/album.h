@@ -15,6 +15,7 @@ private:
     int cantidadCanciones;
 public:
     Album(string,string,string,int, int,string,  string,int);
+    void mostrarAlbum();
 };
 
 #endif // ALBUM_H

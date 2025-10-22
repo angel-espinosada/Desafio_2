@@ -1,6 +1,7 @@
 #include "usuario.h"
 
-Usuario::Usuario(string _idUser,string _pssID,string _nombre,string _ciudad,string _pais, int _anio,int _mes, int _dia, string _tipoCuenta) {
+Usuario::Usuario(string _idUser,string _pssID,string _nombre,
+                 string _ciudad,string _pais, int _anio,int _mes, int _dia, string _tipoCuenta) {
     idUser=_idUser;
     passId=_pssID;
     nombre=_nombre;
