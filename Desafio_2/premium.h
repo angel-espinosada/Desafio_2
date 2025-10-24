@@ -6,7 +6,7 @@
 class Premium:public Usuario
 {
     int cantListas;
-    string listas;
+    string* listas;
 public:
     Premium();
     Premium(string, string, string, string, string, int, int, int, string,int, string);

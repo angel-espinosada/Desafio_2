@@ -12,9 +12,13 @@ class Album : public Artista
 private:
     string codigoAlbum;
     string nombreAlbum;
+    string portada;
+    string generoAlbum;
     int cantidadCanciones;
 public:
-    Album(string,string,string,int, int,string,  string,int);
+    Album();
+    Album(string,string,string,int, int,string,  string,string,string,int);
+
     void mostrarAlbum();
 };
 
