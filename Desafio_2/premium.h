@@ -12,7 +12,9 @@ public:
     Premium(string, string, string, string, string, int, int, int, string,int, string);
 
     void seguirListas();
+    void mostrarListas();
     void reproducir();
+    ~Premium();
 
 };
 

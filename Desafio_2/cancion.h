@@ -10,7 +10,9 @@ class cancion:public Artista
     int idCancion,cantidadReproduccion,duracionCancion, creditos;
 
 public:
+
     cancion();
+    cancion(string,string,string,int, int, string, int, int,int, int );
 };
 
 #endif // CANCION_H
