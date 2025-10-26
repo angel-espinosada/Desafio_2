@@ -10,7 +10,3 @@ Album::Album(string _codigoArtista,string _nombre,string _pais,int _edad, int _s
     cantidadCanciones=_cantidadCanciones;
 
 }
-string codigoAlbum;
-string nombreAlbum;
-
-int cantidadCanciones;

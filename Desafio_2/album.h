@@ -1,6 +1,5 @@
 #ifndef ALBUM_H
 #define ALBUM_H
-#include <iostream>
 #include "artista.h"
 #include <string>
 
