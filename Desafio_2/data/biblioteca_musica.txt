@@ -1,0 +1,20 @@
+100010101;Billie Jean;294;Michael Jackson;Thriller;/music/mj/billie_jean_128.ogg;/music/mj/billie_jean_320.ogg;/music/mj/image/thriller.png;2500000;MJ_credits
+100010102;Beat It;258;Michael Jackson;Thriller;/music/mj/beat_it_128.ogg;/music/mj/beat_it_320.ogg;/music/mj/image/thriller.png;2200000;MJ_credits
+100020101;Like a Prayer;310;Madonna;Like a Prayer;/music/madonna/like_a_prayer_128.ogg;/music/madonna/like_a_prayer_320.ogg;/music/madonna/image/like_a_prayer.png;1800000;Madonna_credits
+100020102;Vogue;305;Madonna;I'm Breathless;/music/madonna/vogue_128.ogg;/music/madonna/vogue_320.ogg;/music/madonna/image/im_breathless.png;1700000;Madonna_credits
+100030101;Bohemian Rhapsody;355;Queen;A Night at the Opera;/music/queen/bohemian_rhapsody_128.ogg;/music/queen/bohemian_rhapsody_320.ogg;/music/queen/image/a_night_at_the_opera.png;3200000;Queen_credits
+100030102;Another One Bites the Dust;217;Queen;The Game;/music/queen/another_one_bites_128.ogg;/music/queen/another_one_bites_320.ogg;/music/queen/image/the_game.png;2800000;Queen_credits
+100040101;Livin' on a Prayer;251;Bon Jovi;Slippery When Wet;/music/bonjovi/livin_on_a_prayer_128.ogg;/music/bonjovi/livin_on_a_prayer_320.ogg;/music/bonjovi/image/slippery_when_wet.png;2400000;BonJovi_credits
+100040102;You Give Love a Bad Name;222;Bon Jovi;Slippery When Wet;/music/bonjovi/you_give_love_128.ogg;/music/bonjovi/you_give_love_320.ogg;/music/bonjovi/image/slippery_when_wet.png;2100000;BonJovi_credits
+100050101;I Will Always Love You;270;Whitney Houston;The Bodyguard;/music/whitney/always_love_you_128.ogg;/music/whitney/always_love_you_320.ogg;/music/whitney/image/the_bodyguard.png;2600000;Whitney_credits
+100050102;I Wanna Dance with Somebody;290;Whitney Houston;Whitney;/music/whitney/dance_with_somebody_128.ogg;/music/whitney/dance_with_somebody_320.ogg;/music/whitney/image/whitney.png;2000000;Whitney_credits
+100060101;La Incondicional;245;Luis Miguel;Busca una Mujer;/music/luismiguel/la_incondicional_128.ogg;/music/luismiguel/la_incondicional_320.ogg;/music/luismiguel/image/busca_una_mujer.png;2300000;LuisMiguel_credits
+100060102;Ahora te puedes marchar;210;Luis Miguel;Soy Como Quiero Ser;/music/luismiguel/ahora_te_puedes_marchar_128.ogg;/music/luismiguel/ahora_te_puedes_marchar_320.ogg;/music/luismiguel/image/soy_como_quiero_ser.png;1900000;LuisMiguel_credits
+100070101;De Música Ligera;220;Soda Stereo;Canción Animal;/music/sodastereo/de_musica_ligera_128.ogg;/music/sodastereo/de_musica_ligera_320.ogg;/music/sodastereo/image/cancion_animal.png;2700000;Soda_credits
+100070102;Cuando Pase el Temblor;240;Soda Stereo;Nada Personal;/music/sodastereo/cuando_pase_el_temblor_128.ogg;/music/sodastereo/cuando_pase_el_temblor_320.ogg;/music/sodastereo/image/nada_personal.png;2000000;Soda_credits
+100080101;Entre Dos Tierras;250;Héroes del Silencio;Senderos de Traición;/music/heroes/entre_dos_tierras_128.ogg;/music/heroes/entre_dos_tierras_320.ogg;/music/heroes/image/senderos_de_traicion.png;2300000;Heroes_credits
+100080102;Maldito Duende;255;Héroes del Silencio;Senderos de Traición;/music/heroes/maldito_duende_128.ogg;/music/heroes/maldito_duende_320.ogg;/music/heroes/image/senderos_de_traicion.png;1900000;Heroes_credits
+100090101;Smells Like Teen Spirit;301;Nirvana;Nevermind;/music/nirvana/smells_like_teen_spirit_128.ogg;/music/nirvana/smells_like_teen_spirit_320.ogg;/music/nirvana/image/nevermind.png;3500000;Nirvana_credits
+100090102;Come As You Are;219;Nirvana;Nevermind;/music/nirvana/come_as_you_are_128.ogg;/music/nirvana/come_as_you_are_320.ogg;/music/nirvana/image/nevermind.png;3100000;Nirvana_credits
+100100101;Estoy Aquí;225;Shakira;Pies Descalzos;/music/shakira/estoy_aqui_128.ogg;/music/shakira/estoy_aqui_320.ogg;/music/shakira/image/pies_descalzos.png;2000000;Shakira_credits
+100100102;Ciega Sordomuda;230;Shakira;¿Dónde están los ladrones?;/music/shakira/ciega_sordomuda_128.ogg;/music/shakira/ciega_sordomuda_320.ogg;/music/shakira/image/donde_estan_los_ladrones.png;2100000;Shakira_credits
