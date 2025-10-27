@@ -2,6 +2,7 @@
 #define USUARIO_H
 #include <string>
 
+
 using namespace std;
 
 class Usuario
@@ -16,6 +17,8 @@ private:
     string tipoCuenta;
 public:
     Usuario(string,string,string,string,string, int,int, int, string);
+    Usuario();
+    void iniciarSesion();
     void mostrarUsuario();
     void reproducir();
     void seguir();

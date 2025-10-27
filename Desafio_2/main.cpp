@@ -7,6 +7,11 @@ using namespace std;
 
 int main()
 {
+    Usuario usuario;
+    usuario.iniciarSesion();
+
+
+
     Artista art("00236","Angel", "Colombia", 36,100);
     art.mostrarArtista();
     cout << "Hello World!" << endl;
