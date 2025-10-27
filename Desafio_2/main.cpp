@@ -9,7 +9,7 @@ int main()
 {
     Usuario usuario;
     usuario.iniciarSesion();
-
+    usuario.cargarUsuario();
 
 
     Artista art("00236","Angel", "Colombia", 36,100);

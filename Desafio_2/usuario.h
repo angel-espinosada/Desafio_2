@@ -19,6 +19,7 @@ public:
     Usuario(string,string,string,string,string, int,int, int, string);
     Usuario();
     void iniciarSesion();
+    void cargarUsuario();
     void mostrarUsuario();
     void reproducir();
     void seguir();
