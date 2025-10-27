@@ -55,7 +55,7 @@ void Usuario:: iniciarSesion(){
 }
 
 void Usuario::cargarUsuario(){
-    ifstream archivo("usuario.txt");
+    ifstream archivo("user.txt");
     if (!archivo.is_open()){
         cout<<"No se pudo abrir el archivo";
         return;
