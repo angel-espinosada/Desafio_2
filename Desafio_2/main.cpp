@@ -10,6 +10,7 @@ int main()
     Usuario usuario;
     usuario.iniciarSesion();
     usuario.cargarUsuario();
+    usuario.mostrarUsuario();
 
 
     Artista art("00236","Angel", "Colombia", 36,100);

@@ -23,6 +23,9 @@ public:
     void mostrarUsuario();
     void reproducir();
     void seguir();
+    char * getidUser();
+    char* getpassId();
+    char* gettipoCuenta();
 };
 
 #endif // USUARIO_H

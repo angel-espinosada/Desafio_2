@@ -19,40 +19,52 @@ Usuario::Usuario(string _idUser,string _pssID,string _nombre,
 
 Usuario::Usuario(){
 
+    idUser = "";
+    passId = "";
+    nombre = "";
+    ciudad = "";
+    pais = "";
+    anio = 0;
+    mes = 0;
+    dia = 0;
+    tipoCuenta = "";
 
 }
 void Usuario::mostrarUsuario(){
-
-
+    cout << "\n===== DATOS DEL USUARIO =====\n";
+    cout << "Usuario: " << idUser << endl;
+    cout << "Password: " << passId << endl;
+    cout << "Tipo: " << tipoCuenta << endl;
+    cout << "Ciudad: " << ciudad << endl;
+    cout << "Pais: " << pais << endl;
+    cout << "Fecha registro: " << anio << "-" << mes << "-" << dia << endl;
 }
 
 void Usuario:: iniciarSesion(){
-    char userdata[50]="Admin";
-    char passdata[50]="12345";
-    char tipoCuenta[50]="Pemium";
+    cargarUsuario();
+    string user, pass;
 
-    char user[50];
-    char pass[50];
     cout<<"********************************************"<<endl;
     cout<<"****Bienvenido a UdeaTunes****"<<endl;
     cout<<"Inicio de sesion"<<endl;
     cout<<"Ingrese el usuario: "<<endl;
     cin>>user;
-    while (strcmp(user, userdata) != 0) { //compara las cadenas
+    while ( user!=idUser) { //compara las cadenas
         cout << "Error en el usuario" << endl;
         cout << "Ingrese de nuevo el usuario: ";
         cin >> user;
     }
     cout<<"Ingrese la clave"<<endl;
     cin>>pass;
-    while(strcmp(passdata,pass)!=0){
+    while(pass!=passId){
         cout<<"Contraseña incorrecta"<<endl;
         cout<<"Ingrese de nuevo la clave"<<endl;
         cin>>pass;
 
     }
-    cout << "Acceso concedido. Bienvenido, " << user << "!" <<"Cuenta"<<tipoCuenta<< endl;
+    cout << "Acceso concedido. Bienvenido, " << idUser << "!" <<" Cuenta "<<tipoCuenta<< endl;
 }
+
 
 void Usuario::cargarUsuario(){
     ifstream archivo("user.txt");
@@ -60,7 +72,7 @@ void Usuario::cargarUsuario(){
         cout<<"No se pudo abrir el archivo";
         return;
     }
-    cout<<"Archivo cargado";
+    //cout<<"Archivo cargado";
     string linea;
 
     // Leemos una línea del archivo
@@ -95,7 +107,7 @@ void Usuario::cargarUsuario(){
     mes = stoi(fecha.substr(5, 2));
     dia = stoi(fecha.substr(8, 2));
 
-    cout << "Usuario cargado correctamente.\n";
+    //cout << "Usuario cargado correctamente.\n";
     archivo.close();
 }
 
