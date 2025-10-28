@@ -19,7 +19,7 @@ int main() {
 
     Usuario usuario;
     usuario.iniciarSesion();
-    usuario.mostrarUsuario();
+    //usuario.mostrarUsuario();
 
     char* tipo = usuario.gettipoCuenta();
     int total = 0;
@@ -136,9 +136,16 @@ cancion* cargarCanciones(const char* nombreArchivo, int& total) {
 
         index++;
     }
+    cout << " MEDICIÓN DE RECURSOS" << endl;
+    cout << "a) Iteraciones totales realizadas: " << total << endl;
+    cout << "b) Memoria total aproximada usada: "
+         << (sizeof(Usuario) + sizeof(cancion) * total)
+         << " bytes." << endl;
+    cout << "=====================================\n";
 
     delete[] linea;
     archivo.close();
     cout << "Se cargaron " << total << " canciones correctamente.\n";
+
     return lista;
 }
