@@ -1,22 +1,23 @@
 #ifndef ALBUM_H
 #define ALBUM_H
+
 #include "artista.h"
-#include <string>
-
-
+#include <cstring>
+#include <iostream>
 using namespace std;
 
-class Album : public Artista
-{
+class Album : public Artista {
 private:
-    string codigoAlbum;
-    string nombreAlbum;
-    string portada;
-    string generoAlbum;
+    char* codigoAlbum;
+    char* nombreAlbum;
+    char* portada;
+    char* generoAlbum;
     int cantidadCanciones;
 public:
-    Album();
-    Album(string,string,string,int, int,string,  string,string,string,int);
+    Album(); // constructor vacío
+    Album(const char*, const char*, const char*, int, int,
+          const char*, const char*, const char*, const char*, int); // con parámetros
+    ~Album(); // destructor
 
     void mostrarAlbum();
 };

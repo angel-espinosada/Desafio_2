@@ -1,20 +1,23 @@
 #ifndef ARTISTA_H
 #define ARTISTA_H
-#include <string>
+
+#include <cstring>
+#include <iostream>
 
 
 using namespace std;
 class Artista
 {
 private:
-    string codigoArtista;
-    string nombre;
-    string pais;
+    char* codigoArtista;
+    char* nombre;
+    char* pais;
     int edad;
     int seguidores;
 public:
     Artista();
-    Artista(string,string,string,int, int);
+    Artista(const char*, const char*, const char*, int, int);
+    ~Artista();
     void mostrarArtista();
 
 };
