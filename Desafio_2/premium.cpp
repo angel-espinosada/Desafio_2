@@ -25,3 +25,6 @@ Premium::Premium(const char* _idUser, const char* _passId, const char* _nombre,
         listas[i][0] = '\0';
     }
 }
+Premium::~Premium() {
+
+}

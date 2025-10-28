@@ -19,6 +19,7 @@ public:
     Artista(const char*, const char*, const char*, int, int);
     ~Artista();
     void mostrarArtista();
+    void mostrarNombre();
 
 };
 

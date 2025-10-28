@@ -145,5 +145,15 @@ void Usuario::cargarUsuario(const char* user){
     idUser[0] = '\0';
 }
 
+char* Usuario::getidUser() {
+    return idUser;
+}
 
+char* Usuario::getpassId() {
+    return passId;
+}
+
+char* Usuario::gettipoCuenta() {
+    return tipoCuenta;
+}
 

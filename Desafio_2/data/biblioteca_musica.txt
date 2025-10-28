@@ -10,11 +10,11 @@
 100050102;I Wanna Dance with Somebody;290;Whitney Houston;Whitney;/music/whitney/dance_with_somebody_128.ogg;/music/whitney/dance_with_somebody_320.ogg;/music/whitney/image/whitney.png;2000000;Whitney_credits
 100060101;La Incondicional;245;Luis Miguel;Busca una Mujer;/music/luismiguel/la_incondicional_128.ogg;/music/luismiguel/la_incondicional_320.ogg;/music/luismiguel/image/busca_una_mujer.png;2300000;LuisMiguel_credits
 100060102;Ahora te puedes marchar;210;Luis Miguel;Soy Como Quiero Ser;/music/luismiguel/ahora_te_puedes_marchar_128.ogg;/music/luismiguel/ahora_te_puedes_marchar_320.ogg;/music/luismiguel/image/soy_como_quiero_ser.png;1900000;LuisMiguel_credits
-100070101;De Música Ligera;220;Soda Stereo;Canción Animal;/music/sodastereo/de_musica_ligera_128.ogg;/music/sodastereo/de_musica_ligera_320.ogg;/music/sodastereo/image/cancion_animal.png;2700000;Soda_credits
+100070101;De Musica Ligera;220;Soda Stereo;Canción Animal;/music/sodastereo/de_musica_ligera_128.ogg;/music/sodastereo/de_musica_ligera_320.ogg;/music/sodastereo/image/cancion_animal.png;2700000;Soda_credits
 100070102;Cuando Pase el Temblor;240;Soda Stereo;Nada Personal;/music/sodastereo/cuando_pase_el_temblor_128.ogg;/music/sodastereo/cuando_pase_el_temblor_320.ogg;/music/sodastereo/image/nada_personal.png;2000000;Soda_credits
-100080101;Entre Dos Tierras;250;Héroes del Silencio;Senderos de Traición;/music/heroes/entre_dos_tierras_128.ogg;/music/heroes/entre_dos_tierras_320.ogg;/music/heroes/image/senderos_de_traicion.png;2300000;Heroes_credits
+100080101;Entre Dos Tierras;250;Héroes del Silencio;Senderos de Traicion;/music/heroes/entre_dos_tierras_128.ogg;/music/heroes/entre_dos_tierras_320.ogg;/music/heroes/image/senderos_de_traicion.png;2300000;Heroes_credits
 100080102;Maldito Duende;255;Héroes del Silencio;Senderos de Traición;/music/heroes/maldito_duende_128.ogg;/music/heroes/maldito_duende_320.ogg;/music/heroes/image/senderos_de_traicion.png;1900000;Heroes_credits
 100090101;Smells Like Teen Spirit;301;Nirvana;Nevermind;/music/nirvana/smells_like_teen_spirit_128.ogg;/music/nirvana/smells_like_teen_spirit_320.ogg;/music/nirvana/image/nevermind.png;3500000;Nirvana_credits
 100090102;Come As You Are;219;Nirvana;Nevermind;/music/nirvana/come_as_you_are_128.ogg;/music/nirvana/come_as_you_are_320.ogg;/music/nirvana/image/nevermind.png;3100000;Nirvana_credits
-100100101;Estoy Aquí;225;Shakira;Pies Descalzos;/music/shakira/estoy_aqui_128.ogg;/music/shakira/estoy_aqui_320.ogg;/music/shakira/image/pies_descalzos.png;2000000;Shakira_credits
+100100101;Estoy Aqui;225;Shakira;Pies Descalzos;/music/shakira/estoy_aqui_128.ogg;/music/shakira/estoy_aqui_320.ogg;/music/shakira/image/pies_descalzos.png;2000000;Shakira_credits
 100100102;Ciega Sordomuda;230;Shakira;¿Dónde están los ladrones?;/music/shakira/ciega_sordomuda_128.ogg;/music/shakira/ciega_sordomuda_320.ogg;/music/shakira/image/donde_estan_los_ladrones.png;2100000;Shakira_credits

@@ -44,10 +44,10 @@ Album::~Album() {
 }
 
 void Album::mostrarAlbum() {
-    cout << "\n=== DATOS DEL ÁLBUM ===" << endl;
-    cout << "Código álbum: " << codigoAlbum << endl;
-    cout << "Nombre álbum: " << nombreAlbum << endl;
-    cout << "Género: " << generoAlbum << endl;
+    cout << " DATOS DEL ALBUM" << endl;
+    cout << "Codigo album: " << codigoAlbum << endl;
+    cout << "Nombre album: " << nombreAlbum << endl;
+    cout << "Genero: " << generoAlbum << endl;
     cout << "Portada: " << portada << endl;
     cout << "Cantidad de canciones: " << cantidadCanciones << endl;
 }

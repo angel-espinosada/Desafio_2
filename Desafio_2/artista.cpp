@@ -45,3 +45,7 @@ void Artista::mostrarArtista(){
     cout << "Edad: " << edad << endl;
     cout << "Seguidores: " << seguidores << endl;
 }
+
+void Artista::mostrarNombre() {
+    cout << nombre;
+}

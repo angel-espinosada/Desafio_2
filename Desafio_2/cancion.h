@@ -16,8 +16,12 @@ public:
     cancion();
     cancion(const char*, const char*, const char*, int, int,
             const char*, int, int, int, int );
+    cancion(const cancion& otra);
+    cancion& operator=(const cancion& otra);
     ~cancion();
     void mostrarCancion();
+    void reproducirPremium();
+    void reproducirEstandar();
 };
 
 #endif // CANCION_H

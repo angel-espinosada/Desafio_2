@@ -5,10 +5,9 @@ using namespace std;
 
 Estandar::Estandar() : Usuario() {
     cantidadPublicidad = 0;
-
-    // Reserva memoria para el texto de publicidad (100 caracteres)
-    listPublicidad = new char[100];
-    strcpy(listPublicidad, ""); // empieza vacío
+    listPublicidad = new char[50];
+    strcpy(listPublicidad, "Publicidad no disponible");
+    cantidadPublicidad = 0;
 }
 
 Estandar::Estandar(const char* _idUser, const char* _passId, const char* _nombre,
