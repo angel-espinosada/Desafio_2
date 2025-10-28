@@ -3,32 +3,53 @@
 #include <cstring>
 #include <fstream>
 
-Usuario::Usuario(string _idUser,string _pssID,string _nombre,
-                 string _ciudad,string _pais, int _anio,int _mes, int _dia, string _tipoCuenta) {
-    idUser=_idUser;
-    passId=_pssID;
-    nombre=_nombre;
-    ciudad=_ciudad;
-    pais=_pais;
-    anio=_anio;
-    mes=_mes;
-    dia=_dia;
-    tipoCuenta=_tipoCuenta;
+using namespace std;
+Usuario::Usuario(const char* _idUser, const char* _passId, const char* _nombre,
+                 const char* _ciudad, const char* _pais,
+                 int _anio, int _mes, int _dia, const char* _tipoCuenta) {
+    idUser = new char[strlen(_idUser) + 1];
+    passId = new char[strlen(_passId) + 1];
+    nombre = new char[strlen(_nombre) + 1];
+    ciudad = new char[strlen(_ciudad) + 1];
+    pais = new char[strlen(_pais) + 1];
+    tipoCuenta = new char[strlen(_tipoCuenta) + 1];
 
+    strcpy(idUser, _idUser);
+    strcpy(passId, _passId);
+    strcpy(nombre, _nombre);
+    strcpy(ciudad, _ciudad);
+    strcpy(pais, _pais);
+    strcpy(tipoCuenta, _tipoCuenta);
+
+    anio = _anio;
+    mes = _mes;
+    dia = _dia;
 }
 
 Usuario::Usuario(){
 
-    idUser = "";
-    passId = "";
-    nombre = "";
-    ciudad = "";
-    pais = "";
-    anio = 0;
-    mes = 0;
-    dia = 0;
-    tipoCuenta = "";
+    idUser = new char[50];
+    passId = new char[50];
+    nombre = new char[50];
+    ciudad = new char[50];
+    pais = new char[50];
+    tipoCuenta = new char[50];
 
+    strcpy(idUser, "");
+    strcpy(passId, "");
+    strcpy(nombre, "");
+    strcpy(ciudad, "");
+    strcpy(pais, "");
+    strcpy(tipoCuenta, "");
+
+}
+Usuario::~Usuario() {
+    delete[] idUser;
+    delete[] passId;
+    delete[] nombre;
+    delete[] ciudad;
+    delete[] pais;
+    delete[] tipoCuenta;
 }
 void Usuario::mostrarUsuario(){
     cout << "\n===== DATOS DEL USUARIO =====\n";
@@ -68,47 +89,54 @@ void Usuario:: iniciarSesion(){
 
 void Usuario::cargarUsuario(){
     ifstream archivo("user.txt");
-    if (!archivo.is_open()){
-        cout<<"No se pudo abrir el archivo";
+    if (!archivo.is_open()) {
+        cout << "No se pudo abrir el archivo." << endl;
         return;
     }
-    //cout<<"Archivo cargado";
-    string linea;
 
-    // Leemos una línea del archivo
-    getline(archivo, linea);
-
-    int i = 0;
-    string campos[10];
-    string acumulador = "";
-
-    // Cortamos manualmente por ';'
-    for (int j = 0; j < linea.length(); j++) {
-        if (linea[j] == ';') {
-            campos[i] = acumulador;
-            acumulador = "";
-            i++;
-        } else {
-            acumulador += linea[j];
-        }
-    }
-    campos[i] = acumulador; // último campo
-
-
-    idUser = campos[0];
-    passId = campos[1];
-    tipoCuenta = campos[2];
-    ciudad = campos[3];
-    pais = campos[4];
-
-
-    string fecha = campos[5];
-    anio = stoi(fecha.substr(0, 4));
-    mes = stoi(fecha.substr(5, 2));
-    dia = stoi(fecha.substr(8, 2));
-
-    //cout << "Usuario cargado correctamente.\n";
+    char linea[200];
+    archivo.getline(linea, 200);
     archivo.close();
+
+
+    char campos[6][50];  //
+    int i = 0, j = 0, c = 0;
+
+
+    while (linea[i] != '\0' && c < 6) {
+        if (linea[i] == ';') {
+            campos[c][j] = '\0';
+            c++;
+            j = 0;
+        } else {
+            campos[c][j] = linea[i];
+            j++;
+        }
+        i++;
+    }
+    campos[c][j] = '\0';
+
+
+    strcpy(idUser, campos[0]);
+    strcpy(passId, campos[1]);
+    strcpy(tipoCuenta, campos[2]);
+    strcpy(ciudad, campos[3]);
+    strcpy(pais, campos[4]);
+
+
+    char anioStr[5], mesStr[3], diaStr[3];
+    strncpy(anioStr, campos[5], 4);
+    anioStr[4] = '\0';
+    strncpy(mesStr, campos[5] + 5, 2);
+    mesStr[2] = '\0';
+    strncpy(diaStr, campos[5] + 8, 2);
+    diaStr[2] = '\0';
+
+    anio = atoi(anioStr);
+    mes = atoi(mesStr);
+    dia = atoi(diaStr);
+
+    cout << "Usuario cargado correctamente.\n";
 }
 
 

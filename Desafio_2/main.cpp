@@ -5,17 +5,15 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     Usuario usuario;
-    usuario.iniciarSesion();
-    usuario.cargarUsuario();
-    usuario.mostrarUsuario();
+    usuario.iniciarSesion();    // carga y valida usuario
+    usuario.mostrarUsuario();   // muestra los datos
 
-
-    Artista art("00236","Angel", "Colombia", 36,100);
+    Artista art("00236", "Angel", "Colombia", 36, 100);
     art.mostrarArtista();
-    cout << "Hello World!" << endl;
-    system("pause");
+
+    cout << "\nFin del programa\n";
+    system("pause");  // o cin.get();
     return 0;
 }

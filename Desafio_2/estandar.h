@@ -3,19 +3,17 @@
 #include "usuario.h"
 
 
-
-using namespace std;
 class Estandar:public Usuario
 {
 private:
 
-    string listPublicidad;
+    char* listPublicidad;
     int cantidadPublicidad;
 
 public:
     Estandar();
-    Estandar(string, string, string, string, string, int, int, int, string, string, int);
-    void mostraPublicidad();
+    Estandar(const char*, const char*, const char*, const char*, const char*, int, int, int, const char*, int);
+    void mostrarPublicidad();
+    ~Estandar();
 };
-
 #endif // ESTANDAR_H

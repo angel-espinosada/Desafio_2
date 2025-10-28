@@ -1,23 +1,24 @@
 #ifndef USUARIO_H
 #define USUARIO_H
-#include <string>
 
 
-using namespace std;
+
+
 
 class Usuario
 {
 private:
-    string idUser;
-    string passId;
-    string nombre;
-    string ciudad;
-    string pais;
+    char *idUser;
+    char *passId;
+   char *nombre;
+    char *ciudad;
+    char *pais;
     int anio, mes,dia;
-    string tipoCuenta;
+    char *tipoCuenta;
 public:
-    Usuario(string,string,string,string,string, int,int, int, string);
+    Usuario(const char*,const char*,const char*,const char*,const char* , int,int, int, const char*);
     Usuario();
+    ~Usuario();
     void iniciarSesion();
     void cargarUsuario();
     void mostrarUsuario();

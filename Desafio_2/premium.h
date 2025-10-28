@@ -4,12 +4,12 @@
 
 
 class Premium:public Usuario
-{
+{private:
     int cantListas;
-    string* listas;
+    char listas[10][50];
 public:
     Premium();
-    Premium(string, string, string, string, string, int, int, int, string,int, string);
+    Premium(const char*, const char*, const char*, const char*, const char*, int, int, int, const char*, int);
 
     void seguirListas();
     void mostrarListas();
