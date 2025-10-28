@@ -20,7 +20,7 @@ public:
     Usuario();
     ~Usuario();
     void iniciarSesion();
-    void cargarUsuario();
+    void cargarUsuario(const char* user);
     void mostrarUsuario();
     void reproducir();
     void seguir();

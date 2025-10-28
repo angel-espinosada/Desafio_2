@@ -62,22 +62,24 @@ void Usuario::mostrarUsuario(){
 }
 
 void Usuario:: iniciarSesion(){
-    cargarUsuario();
-    string user, pass;
+
+    char user[50], pass[50];
 
     cout<<"********************************************"<<endl;
     cout<<"****Bienvenido a UdeaTunes****"<<endl;
     cout<<"Inicio de sesion"<<endl;
     cout<<"Ingrese el usuario: "<<endl;
     cin>>user;
-    while ( user!=idUser) { //compara las cadenas
+    cargarUsuario(user);
+    while ( idUser[0] == '\0') { //compara las cadenas
         cout << "Error en el usuario" << endl;
         cout << "Ingrese de nuevo el usuario: ";
         cin >> user;
+        cargarUsuario(user);
     }
     cout<<"Ingrese la clave"<<endl;
     cin>>pass;
-    while(pass!=passId){
+    while(strcmp(pass,passId)!=0){
         cout<<"Contraseña incorrecta"<<endl;
         cout<<"Ingrese de nuevo la clave"<<endl;
         cin>>pass;
@@ -87,7 +89,7 @@ void Usuario:: iniciarSesion(){
 }
 
 
-void Usuario::cargarUsuario(){
+void Usuario::cargarUsuario(const char* user){
     ifstream archivo("user.txt");
     if (!archivo.is_open()) {
         cout << "No se pudo abrir el archivo." << endl;
@@ -95,48 +97,52 @@ void Usuario::cargarUsuario(){
     }
 
     char linea[200];
-    archivo.getline(linea, 200);
+    while(archivo.getline(linea, 200)){
+        char campos[7][50];
+        int i = 0, j = 0, c = 0;
+
+        // Parsear la línea (igual que antes)
+        while (linea[i] != '\0' && c < 7) {
+            if (linea[i] == ';') {
+                campos[c][j] = '\0';
+                c++;
+                j = 0;
+            } else {
+                campos[c][j] = linea[i];
+                j++;
+            }
+            i++;
+        }
+        campos[c][j] = '\0';
+
+        // Si encontramos el usuario, guardamos los datos y salimos
+        if (strcmp(user,campos[0])==0) {
+            strcpy(idUser, campos[0]);
+            strcpy(passId, campos[1]);
+            strcpy(tipoCuenta, campos[2]);
+            strcpy(ciudad, campos[3]);
+            strcpy(pais, campos[4]);
+
+            char anioStr[5], mesStr[3], diaStr[3];
+            strncpy(anioStr, campos[5], 4);
+            anioStr[4] = '\0';
+            strncpy(mesStr, campos[5] + 5, 2);
+            mesStr[2] = '\0';
+            strncpy(diaStr, campos[5] + 8, 2);
+            diaStr[2] = '\0';
+
+            anio = atoi(anioStr);
+            mes = atoi(mesStr);
+            dia = atoi(diaStr);
+
+            archivo.close();
+            return;
+        }
+    }
+
     archivo.close();
 
-
-    char campos[6][50];  //
-    int i = 0, j = 0, c = 0;
-
-
-    while (linea[i] != '\0' && c < 6) {
-        if (linea[i] == ';') {
-            campos[c][j] = '\0';
-            c++;
-            j = 0;
-        } else {
-            campos[c][j] = linea[i];
-            j++;
-        }
-        i++;
-    }
-    campos[c][j] = '\0';
-
-
-    strcpy(idUser, campos[0]);
-    strcpy(passId, campos[1]);
-    strcpy(tipoCuenta, campos[2]);
-    strcpy(ciudad, campos[3]);
-    strcpy(pais, campos[4]);
-
-
-    char anioStr[5], mesStr[3], diaStr[3];
-    strncpy(anioStr, campos[5], 4);
-    anioStr[4] = '\0';
-    strncpy(mesStr, campos[5] + 5, 2);
-    mesStr[2] = '\0';
-    strncpy(diaStr, campos[5] + 8, 2);
-    diaStr[2] = '\0';
-
-    anio = atoi(anioStr);
-    mes = atoi(mesStr);
-    dia = atoi(diaStr);
-
-    cout << "Usuario cargado correctamente.\n";
+    idUser[0] = '\0';
 }
 
 
